@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: #22233b;
+    .navbar_wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+        .nav_links {
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .logo {
+            color: $golden-color;
+            h4 {
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+        .nav_middle {
+            width: 50%;
+            ul {
+                display: flex;
+                justify-content: space-around;
+                a {
+                    text-decoration: none;
+                    color: $text-color;
+                }
+            }
+        }
+        .nav_right {
+            color: $golden-color;
+        }
+    }
+}
