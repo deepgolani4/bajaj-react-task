@@ -1,0 +1,14 @@
+$primary-color: #8b8cf9;
+$secondary-color: #bbdfc8;
+$third-color: #f6a48a;
+$golden-color: #feb243;
+$background-color: #22233b;
+$background-color-darker: #3a3c63;
+$grey: #e3e3e3;
+$text-color: #fff;
+
+@mixin gradient($color1, $color2) {
+    background: -webkit-linear-gradient($color1, $color2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
