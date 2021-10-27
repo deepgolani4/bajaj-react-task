@@ -1,18 +1,28 @@
 @import '../../styles/variables.scss';
 .navbar {
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: #22233b;
     .navbar_wrapper {
         display: flex;
         justify-content: space-between;
-        padding: 10px 30px;
+        padding: 20px 30px;
         .nav_links {
             font-size: 18px;
             font-weight: 400;
+            transition: all 0.3s ease;
+            &:hover {
+                color: $golden-color;
+            }
         }
-        .logo {
+        .name_tag {
             color: $golden-color;
+            display: flex;
+            align-items: center;
+            .logo {
+                width: 35px;
+                margin-right: 10px;
+            }
             h4 {
                 font-size: 18px;
                 font-weight: 500;
