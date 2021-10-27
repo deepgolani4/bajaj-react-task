@@ -1,0 +1,51 @@
+.globalSection {
+    width: 50%;
+    padding-bottom: 20px;
+    margin-top: -70px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    .total_crypto_card {
+        width: 180px;
+        height: 250px;
+        &.tmc {
+            width: 155px;
+        }
+        .total_crypto_card_inner {
+            width: 100%;
+            height: 100%;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            h5 {
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+    .total_marketCap_card {
+        width: 80px;
+        height: 250px;
+        position: relative;
+
+        .priceTag_wrapper {
+            position: absolute;
+            bottom: 20px;
+            right: 0;
+            left: 0;
+        }
+        h5 {
+            width: 250px;
+            height: 80px;
+            font-size: 18px;
+            font-weight: 500;
+            position: absolute;
+            top: 0;
+            left: -75%;
+            transform: rotate(-90deg);
+        }
+    }
+}

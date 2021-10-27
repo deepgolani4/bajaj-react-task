@@ -5,7 +5,12 @@ const Navbar = () => {
     return (
         <div className={styles.navbar}>
             <div className={styles.navbar_wrapper}>
-                <div className={styles.logo}>
+                <div className={styles.name_tag}>
+                    <img
+                        className={styles.logo}
+                        src='/assets/logo.svg'
+                        alt=''
+                    />
                     <h4>CryptoChain</h4>
                 </div>
                 <div className={styles.nav_middle}>
