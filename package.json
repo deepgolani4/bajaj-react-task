@@ -13,6 +13,7 @@
         "@testing-library/user-event": "^7.1.2",
         "axios": "^0.24.0",
         "chart.js": "^3.6.0",
+        "dotenv": "^10.0.0",
         "html-react-parser": "^1.4.0",
         "millify": "^4.0.0",
         "moment": "^2.29.1",
