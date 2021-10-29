@@ -1,15 +1,21 @@
+@import '../../styles/variables.scss';
 .globalSection {
-    width: 50%;
+    width: 65%;
     padding-bottom: 20px;
     margin-top: -70px;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
     z-index: 1;
     .total_crypto_card {
         width: 180px;
         height: 250px;
+        margin: 15px;
+        transition: 0.3s ease-in;
+        .icon {
+            color: $primary-color;
+        }
         &.tmc {
             width: 155px;
         }
@@ -25,11 +31,20 @@
                 font-weight: 500;
             }
         }
+
+        &:hover {
+            transform: scale(0.95);
+            background-color: $primary-color;
+            .icon {
+                color: rgba($background-color, 0.8);
+            }
+        }
     }
     .total_marketCap_card {
-        width: 80px;
+        width: 85px;
         height: 250px;
         position: relative;
+        transition: 0.2s ease-in;
 
         .priceTag_wrapper {
             position: absolute;
@@ -44,8 +59,12 @@
             font-weight: 500;
             position: absolute;
             top: 0;
-            left: -75%;
+            left: -70%;
             transform: rotate(-90deg);
+        }
+        &:hover {
+            transform: scale(0.95);
+            background-color: $primary-color;
         }
     }
 }
