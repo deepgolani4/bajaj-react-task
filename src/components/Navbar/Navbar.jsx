@@ -1,11 +1,7 @@
 import React from 'react';
 import styles from './navbar.module.scss';
-import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 const Navbar = () => {
-    const location = useLocation();
-    const pathName = location.pathname;
-    console.log(pathName === '/');
     return (
         <div className={styles.navbar}>
             <div className={styles.navbar_wrapper}>
@@ -19,46 +15,38 @@ const Navbar = () => {
                 </div>
                 <div className={styles.nav_middle}>
                     <ul>
-                        <Link
+                        <NavLink
+                            exact
                             to='/'
-                            className={
-                                pathName === '/'
-                                    ? `${styles.active_link}`
-                                    : `${styles.nav_links}`
-                            }
+                            className={styles.nav_links}
+                            activeClassName={styles.active_link}
                         >
                             Home
-                        </Link>
-                        <Link
+                        </NavLink>
+                        <NavLink
+                            exact
                             to='/cryptocurrencies'
-                            className={
-                                pathName === '/cryptocurrencies'
-                                    ? `${styles.active_link}`
-                                    : `${styles.nav_links}`
-                            }
+                            className={styles.nav_links}
+                            activeClassName={styles.active_link}
                         >
                             Cryptocurrencies
-                        </Link>
-                        <Link
+                        </NavLink>
+                        <NavLink
+                            exact
                             to='/news'
-                            className={
-                                pathName === '/news'
-                                    ? `${styles.active_link}`
-                                    : `${styles.nav_links}`
-                            }
+                            className={styles.nav_links}
+                            activeClassName={styles.active_link}
                         >
                             News
-                        </Link>
-                        <Link
+                        </NavLink>
+                        <NavLink
+                            exact
                             to='/exchanges'
-                            className={
-                                pathName === '/exchanges'
-                                    ? `${styles.active_link}`
-                                    : `${styles.nav_links}`
-                            }
+                            className={styles.nav_links}
+                            activeClassName={styles.active_link}
                         >
                             Exchanges
-                        </Link>
+                        </NavLink>
                     </ul>
                 </div>
                 <div className={styles.nav_right}>

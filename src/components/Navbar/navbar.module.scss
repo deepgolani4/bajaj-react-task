@@ -6,6 +6,7 @@
     .navbar_wrapper {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 20px 30px;
         .nav_links {
             font-size: 18px;
@@ -22,9 +23,13 @@
             transition: all 0.4s ease;
             background-color: $primary-color;
             border-radius: 20px;
-            padding: 6px 8px;
+            padding: 4px 8px;
             color: $text-color;
+            &:hover {
+                color: $text-color;
+            }
         }
+
         .name_tag {
             color: $golden-color;
             display: flex;
@@ -40,6 +45,7 @@
         }
         .nav_middle {
             width: 50%;
+            position: relative;
             ul {
                 display: flex;
                 justify-content: space-around;

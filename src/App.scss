@@ -11,3 +11,31 @@ body {
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
 }
+.section_heading {
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    &.green {
+        color: $secondary-color !important;
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    &.pink {
+        color: $third-color !important;
+    }
+}
+a {
+    text-decoration: none;
+}
