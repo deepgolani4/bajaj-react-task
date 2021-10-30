@@ -7,26 +7,45 @@
 }
 .photoCell {
     width: 40%;
-    padding-left: 25px;
+    margin-right: -40px;
     border-color: black;
     font-weight: bolder;
+    float: right;
 }
    
 .cell {
-    width: 30%;
+
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: black;
     border-color: black;
     border: none;
-    margin-top: -10px;
+    &:hover {
+        color: $golden-color;
+    }
 }
 .font {
     padding-left: 60px;
     color: $golden-color;
-   font-weight: bolder;
+   font-weight: bold;
+   padding-bottom: 10px;
     
 }
 
 .first {
     border-color: black;
-    font-size: 20px;
-    font-weight: bolder;
+    font-size: 14px;
+    padding-top: 5px;
+    &:hover {
+        color: $golden-color;
+    }
+}
+.photo {
+    padding: top 10px;
+    padding-left: 30px;
+}
+.logoText {
+    color: $golden-color;
+    
 }
