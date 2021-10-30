@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+.Cont {
+    width: 100%;
+    background-color: black;
+    color: white;
+
+}
+.photoCell {
+    width: 40%;
+    padding-left: 25px;
+    border-color: black;
+    font-weight: bolder;
+}
+   
+.cell {
+    width: 30%;
+    border-color: black;
+    border: none;
+    margin-top: -10px;
+}
+.font {
+    padding-left: 60px;
+    color: $golden-color;
+   font-weight: bolder;
+    
+}
+
+.first {
+    border-color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
