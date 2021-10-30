@@ -1,11 +1,11 @@
 @import '../../../../styles/variables.scss';
 .coin_card {
-    width: 250px;
+    width: 270px;
     height: 200px;
     padding: 10px;
     background-color: $background-color-darker;
     position: relative;
-    margin: 20px;
+    margin: 20px 0px;
     transition: 0.3s ease-in;
     &:hover {
         transform: scale(0.95);

@@ -4,7 +4,7 @@
     min-height: calc(400vh - 70px);
     padding: 10px 8%;
     background-color: $background-color;
-
+    position: relative;
     .banner {
         display: flex;
         justify-content: space-between;
@@ -22,5 +22,23 @@
             width: 40%;
             margin-left: 50px;
         }
+    }
+    .vase1 {
+        width: 10%;
+        position: absolute;
+        top: 10%;
+        left: 0;
+    }
+    .vase2 {
+        width: 10%;
+        position: absolute;
+        right: 0;
+        top: 30%;
+    }
+    .cube {
+        width: 10%;
+        position: absolute;
+        left: 0;
+        bottom: 30%;
     }
 }

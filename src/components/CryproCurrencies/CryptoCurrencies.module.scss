@@ -1,8 +1,36 @@
 @import '../../styles/variables.scss';
 .cryptocurrencies {
-    padding: 30px 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    .search_crypto {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        margin-bottom: 50px;
+        input {
+            width: 50%;
+            padding: 10px 30px;
+            border: 2px solid $third-color;
+            font-size: 18px;
+            background-color: #3e3e55;
+            border-radius: 30px;
+            color: $text-color;
+            margin-right: 10%;
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 10px $third-color;
+            }
+        }
+        .searchIcon {
+            position: absolute;
+            color: $third-color;
+            left: 45%;
+        }
+    }
+    .cryptocurrencies_list {
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

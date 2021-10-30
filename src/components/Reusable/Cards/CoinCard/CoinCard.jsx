@@ -13,7 +13,7 @@ const CoinCard = ({ currency, color }) => {
             <div className={styles.coin_icon} style={style}>
                 <img src={currency.iconUrl} alt='' />
             </div>
-            <h3>{`${currency.rank}. ${currency.name}`}</h3>
+            <h3>{`${currency.rank}. ${currency.name.substring(0, 12)}`}</h3>
             <div className={styles.coin_info}>
                 <p className={styles.info_title}>Market Cap : </p>
                 <h4>${millify(currency.marketCap)}</h4>

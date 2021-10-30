@@ -1,0 +1,17 @@
+@import '../../../styles/variables.scss';
+.secondary_btn {
+    background-color: $background-color-darker;
+    border: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: $text-color;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: $primary-color;
+    }
+}

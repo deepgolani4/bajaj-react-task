@@ -42,26 +42,32 @@
             position: absolute;
         }
     }
-    .top_cryptocurrency_heading {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        z-index: 1;
-        color: $text-color;
-        .top_crypto_img {
-            width: 40%;
-            margin-right: 10px;
+    .top_cryptocurrency_section {
+        padding: 0 30px;
+        .top_cryptocurrency_heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+            color: $text-color;
+            .top_crypto_img {
+                width: 40%;
+                margin-right: 10px;
+            }
+            .top_cyptos_title {
+                text-align: right;
+            }
+            .blob2 {
+                position: absolute;
+                top: -10%;
+                right: -15%;
+                width: 30%;
+                z-index: -1;
+            }
         }
-        .top_cyptos_title {
-            text-align: right;
-        }
-        .blob2 {
-            position: absolute;
-            top: -10%;
-            right: -10%;
-            width: 30%;
-            z-index: -1;
+        .viewAll {
+            float: right;
         }
     }
 }
