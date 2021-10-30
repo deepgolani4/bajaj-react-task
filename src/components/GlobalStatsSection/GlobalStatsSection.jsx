@@ -6,9 +6,9 @@ import { GiCubeforce } from 'react-icons/gi';
 import { useGetCryptosQuery } from '../../services/cryptoApi';
 import millify from 'millify';
 const GlobalStatsSection = () => {
-    const { data, isFetching } = useGetCryptosQuery();
+    const { data, isFetching } = useGetCryptosQuery(9);
     const globalStats = data?.data?.stats;
-    console.log(data);
+
     if (isFetching) return 'Loading...';
     return (
         <div className={styles.globalSection}>

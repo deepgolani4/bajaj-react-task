@@ -1,0 +1,66 @@
+@import '../../../../styles/variables.scss';
+.coin_card {
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    background-color: $background-color-darker;
+    position: relative;
+    margin: 20px;
+    transition: 0.3s ease-in;
+    &:hover {
+        transform: scale(0.95);
+        background-color: $primary-color;
+        .icon {
+            color: rgba($background-color, 0.8);
+        }
+        h3,
+        .info_title {
+            color: $background-color-darker;
+        }
+        h4 {
+            color: $text-color !important;
+        }
+    }
+    .coin_icon {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        border-radius: 100px;
+        box-shadow: 0 0 20px $primary-color;
+        top: -15px;
+        left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 60%;
+            border-radius: 100px;
+        }
+    }
+    h3 {
+        text-align: right;
+        font-weight: 600;
+        color: $primary-color;
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .coin_info {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        .info_title {
+            font-weight: 500;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: $third-color;
+        }
+    }
+    .price {
+        width: 50%;
+    }
+}

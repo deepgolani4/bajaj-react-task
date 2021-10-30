@@ -1,0 +1,8 @@
+@import '../../styles/variables.scss';
+.cryptocurrencies {
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

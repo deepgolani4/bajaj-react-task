@@ -1,5 +1,5 @@
 import React from 'react';
-import { GlobalStatsSection } from '../../components';
+import { CryptoCurrencies, GlobalStatsSection } from '../../components';
 import styles from './Home.module.scss';
 
 const Home = () => {
@@ -7,8 +7,8 @@ const Home = () => {
         <div className={styles.home_page}>
             <div className={styles.banner}>
                 <div>
-                    <h1>Global Crypto</h1>
-                    <h1>Statistics.</h1>
+                    <h1 className='section_heading'>Global Crypto</h1>
+                    <h1 className='section_heading'>Statistics.</h1>
                     <p className={styles.subheading}>
                         Get all the information about cryptos here.
                     </p>
@@ -37,6 +37,22 @@ const Home = () => {
                 </div>
             </div>
             <GlobalStatsSection />
+            <div className={styles.top_cryptocurrency_heading}>
+                <img
+                    className={styles.top_crypto_img}
+                    src='/assets/allcryptos.png'
+                    alt='3d-img'
+                />
+                <h1 className={`section_heading ${styles.top_cyptos_title}`}>
+                    Top 9 Cryptos in the World
+                </h1>
+                <img
+                    className={styles.blob2}
+                    src='/assets/blob2.svg'
+                    alt='blob'
+                />
+            </div>
+            <CryptoCurrencies simplified />
         </div>
     );
 };
