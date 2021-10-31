@@ -1,0 +1,153 @@
+@import '../../styles/variables.scss';
+
+.crypto_details {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  padding: 90px 8%;
+  background-color: $background-color;
+  .crypto_main {
+    display: flex;
+    margin-bottom: 2rem;
+    .crypto_main_left {
+      flex: 1;
+      .crypto_header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        .crypto_logo {
+          height: 100px;
+          width: 100px;
+        }
+        .crypto_name {
+          font-weight: 600;
+          font-size: 4rem;
+          color: $golden_color;
+          margin-left: 3rem;
+        }
+      }
+      .crypto_price_info {
+        display: flex;
+        align-items: center;
+        .crypto_price {
+          font-weight: 600;
+          font-size: 3rem;
+          color: $third_color;
+        }
+        .crypto_price_change {
+          width: 139px;
+          height: 55px;
+          background: $background-color-darker;
+          border-radius: 50px;
+          margin-left: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $green-color;
+          font-size: 1.5rem;
+          font-weight: 600;
+          svg {
+            margin-right: 0.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .crypto_main_right {
+      flex: 1;
+      display: flex;
+      justify-content: end;
+      img {
+        height: 300px;
+      }
+    }
+  }
+
+  .crypto_details_col1,
+  .crypto_details_col3,
+  .crypto_details_col4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    .crypto_details_card {
+      width: 30%;
+      padding: 1.5rem;
+      .crypto_details_header {
+        display: flex;
+        align-items: center;
+        img {
+          height: 2.5rem;
+          width: 2.5rem;
+          margin-right: 1rem;
+        }
+        h5 {
+          font-weight: bold;
+          font-size: 1.5rem;
+          color: $primary-color;
+        }
+      }
+      .pricetag_wrapper {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .crypto_details_col2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    .price_chart_wrapper {
+      width: 65%;
+      padding: 1.5rem;
+    }
+    .coin_info_card {
+      width: 30%;
+      background-color: $primary-color;
+      padding: 1.5rem;
+      div {
+        h6 {
+          font-weight: 600;
+          font-size: 1.5rem;
+          color: $background-color;
+        }
+        p {
+          font-weight: 500;
+          font-size: 1rem;
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  .what_is {
+    margin-bottom: 2rem;
+    .what_is_card {
+      background-color: $primary-color;
+      padding: 1.5rem;
+      h4 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: $background-color;
+      }
+      p {
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: $text-color;
+      }
+    }
+  }
+
+  .suggestions {
+    h2 {
+      font-weight: 600;
+      font-size: 3rem;
+      color: $third-color;
+      margin-bottom: 2rem;
+    }
+    .suggestions_cards {
+      .suggestions_card {
+        padding: 1.5rem;
+      }
+    }
+  }
+}
