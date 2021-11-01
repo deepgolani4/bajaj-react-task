@@ -1,11 +1,17 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { CryptoCurrencies, GlobalStatsSection, Button } from '../../components';
+import {
+    CryptoCurrencies,
+    GlobalStatsSection,
+    Button,
+    News,
+} from '../../components';
 import styles from './Home.module.scss';
 import { BsArrowRightCircle } from 'react-icons/bs';
 const Home = () => {
     const history = useHistory();
     const handleOnClick = () => history.push('/cryptocurrencies');
+    const handleOnClickNews = () => history.push('/news');
     return (
         <div className={styles.home_page}>
             <div className={styles.banner}>
@@ -41,7 +47,7 @@ const Home = () => {
             </div>
             <GlobalStatsSection />
             <div className={styles.top_cryptocurrency_section}>
-                <div className={styles.top_cryptocurrency_heading}>
+                <div className={styles.top_cryptocurrency_title}>
                     <img
                         className={styles.top_crypto_img}
                         src='/assets/allcryptos.png'
@@ -62,6 +68,21 @@ const Home = () => {
                 <CryptoCurrencies simplified />
                 <div className={styles.viewAll}>
                     <Button text='View All' onClick={handleOnClick}>
+                        <BsArrowRightCircle
+                            style={{ marginLeft: '10px' }}
+                            size='2rem'
+                        />
+                    </Button>
+                </div>
+            </div>
+            <div className={styles.news_section}>
+                <div className={styles.news_section_title}>
+                    <img src='/assets/news.png' alt='3dImg' />
+                    <h1 className='section_heading'>Latest News</h1>
+                </div>
+                <News simplified />
+                <div className={styles.viewAll}>
+                    <Button text='View All' onClick={handleOnClickNews}>
                         <BsArrowRightCircle
                             style={{ marginLeft: '10px' }}
                             size='2rem'

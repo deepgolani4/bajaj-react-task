@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { CryptoCurrencies } from '../../components/index';
 import styles from './Cryptocurrencies.module.scss';
 const Cryptocurrencies = () => {
