@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.suggestions {
+  h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: $third-color;
+    margin-bottom: 2rem;
+  }
+  .suggestions_cards {
+    display: flex;
+    justify-content: space-between;
+    .suggestions_card {
+      padding: 1.5rem;
+    }
+  }
+}
