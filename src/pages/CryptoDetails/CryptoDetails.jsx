@@ -56,6 +56,11 @@ const CryptoDetails = () => {
         <GlobalCard className={styles.what_is_card}>
           <h4>What is {cryptoDetails?.name} ?</h4>
           <p dangerouslySetInnerHTML={{ __html: cryptoDetails?.description }} />
+          <img
+            className={styles.bulb}
+            src='/assets/bulb.png'
+            alt='What is crypto'
+          />
         </GlobalCard>
       </section>
       <CryptoSuggestions coinId={coinId} />

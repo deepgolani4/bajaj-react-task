@@ -12,7 +12,8 @@
     .crypto_details_header {
       display: flex;
       align-items: center;
-      img {
+      img,
+      svg {
         height: 2.5rem;
         width: 2.5rem;
         margin-right: 1rem;
@@ -44,6 +45,9 @@
     width: 30%;
     background-color: $primary-color;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     div {
       h6 {
         font-weight: 600;

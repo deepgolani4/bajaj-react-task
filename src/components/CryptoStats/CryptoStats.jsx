@@ -4,10 +4,22 @@ import GlobalCard from '../../components/Reusable/Cards/GlobalCard/GlobalCard'
 import Pricetag from '../../components/Reusable/PriceTag/Pricetag'
 import PriceChart from '../../components/PriceChart/PriceChart'
 import millify from 'millify'
+import {
+  RiMoneyDollarCircleFill,
+  RiTrophyFill,
+  RiCopperCoinFill,
+  RiCoinsFill
+} from 'react-icons/ri'
+import { HiLightningBolt } from 'react-icons/hi'
+import { IoIosStats } from 'react-icons/io'
+import { GiTakeMyMoney } from 'react-icons/gi'
+import { BsPatchCheckFill } from 'react-icons/bs'
+import { AiFillDollarCircle } from 'react-icons/ai'
 
 import styles from './CryptoStats.module.scss'
 
 const CryptoStats = ({ cryptoDetails, coinId }) => {
+  console.log(cryptoDetails)
   const [stats1, setStats1] = useState(
     Array(3).fill({
       title: '',
@@ -43,17 +55,17 @@ const CryptoStats = ({ cryptoDetails, coinId }) => {
         {
           title: 'Market Cap',
           value: cryptoDetails.marketCap && millify(cryptoDetails.marketCap),
-          icon: <img src='/assets/spin.png' alt='' />
+          icon: <RiMoneyDollarCircleFill style={{ color: '#F6A48A' }} />
         },
         {
           title: '24h Volume',
           value: cryptoDetails.volume && millify(cryptoDetails.volume),
-          icon: <img src='/assets/spin.png' alt='' />
+          icon: <HiLightningBolt style={{ color: '#E53E3E' }} />
         },
         {
           title: 'Rank',
           value: cryptoDetails.rank,
-          icon: <img src='/assets/spin.png' alt='' />
+          icon: <IoIosStats style={{ color: '#25B196' }} />
         }
       ])
 
@@ -88,6 +100,13 @@ const CryptoStats = ({ cryptoDetails, coinId }) => {
           value:
             cryptoDetails.links.find((x) => x.type === 'github')?.name || 'NA',
           url: cryptoDetails.links.find((x) => x.type === 'github')?.url || ''
+        },
+        {
+          title: 'Telegram',
+          value:
+            cryptoDetails.links.find((x) => x.type === 'telegram')?.name ||
+            'NA',
+          url: cryptoDetails.links.find((x) => x.type === 'telegram')?.url || ''
         }
       ])
 
@@ -97,17 +116,17 @@ const CryptoStats = ({ cryptoDetails, coinId }) => {
           value:
             cryptoDetails?.allTimeHigh?.price &&
             millify(cryptoDetails?.allTimeHigh?.price),
-          icon: <img src='/assets/spin.png' alt='' />
+          icon: <RiTrophyFill style={{ color: '#E53E3E' }} />
         },
         {
           title: '# of Markets',
           value: cryptoDetails?.numberOfMarkets,
-          icon: <img src='/assets/spin.png' alt='' />
+          icon: <RiCopperCoinFill style={{ color: '#25B196' }} />
         },
         {
           title: '# of Exchanges',
           value: cryptoDetails?.numberOfExchanges,
-          icon: <img src='/assets/spin.png' alt='' />
+          icon: <RiCoinsFill style={{ color: '#F6A48A' }} />
         }
       ])
 
@@ -116,19 +135,19 @@ const CryptoStats = ({ cryptoDetails, coinId }) => {
           title: 'Total Supply',
           value:
             cryptoDetails?.totalSupply && millify(cryptoDetails?.totalSupply),
-          icon: <img src='/assets/spin.png' alt='' />
+          icon: <AiFillDollarCircle style={{ color: '#25B196' }} />
         },
         {
           title: 'Circulating Supply',
           value:
             cryptoDetails?.circulatingSupply &&
             millify(cryptoDetails?.circulatingSupply),
-          icon: <img src='/assets/spin.png' alt='' />
+          icon: <GiTakeMyMoney style={{ color: '#F6A48A' }} />
         },
         {
           title: 'Approved Supply',
           value: cryptoDetails?.approvedSupply,
-          icon: <img src='/assets/spin.png' alt='' />
+          icon: <BsPatchCheckFill style={{ color: '#E53E3E' }} />
         }
       ])
     }
@@ -186,12 +205,12 @@ const CryptoStats = ({ cryptoDetails, coinId }) => {
             </div>
             {stats.value === true && (
               <div className={styles.pricetag_wrapper}>
-                <Pricetag text={'True'} />
+                <Pricetag text={'Yes'} />
               </div>
             )}
             {stats.value === false && (
               <div className={styles.pricetag_wrapper}>
-                <Pricetag text={'False'} />
+                <Pricetag text={'No'} />
               </div>
             )}
             {stats.value !== true && stats.value !== false && (
