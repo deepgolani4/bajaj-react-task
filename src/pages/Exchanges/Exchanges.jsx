@@ -26,15 +26,15 @@ const Exchanges = () => {
                 />
             </div>
 
-        <div className="exchange_table">
-        <TableContainer component={Paper} className={styles.table_container}>
+        <div >
+        <TableContainer component={Paper} className={styles.exchange_table}>
             <Table aria-label="collapse table">
                 <TableHead>
                     <TableRow>
-                        <TableCell align="center">Exchanges</TableCell>
-                        <TableCell align="center">Trade Volume</TableCell>
-                        <TableCell align="center">Markets</TableCell>
-                        <TableCell align="center">Change percentage</TableCell>
+                        <TableCell align="center" className={styles.table_cell}>Exchanges</TableCell>
+                        <TableCell align="center" className={styles.table_cell}>Trade Volume</TableCell>
+                        <TableCell align="center" className={styles.table_cell}>Markets</TableCell>
+                        <TableCell align="center" className={styles.table_cell}>Change percentage</TableCell>
                         <TableCell />
                     </TableRow>
                 </TableHead>

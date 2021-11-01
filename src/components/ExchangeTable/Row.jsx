@@ -3,6 +3,7 @@ import millify from 'millify';
 import HTMLReactParser from 'html-react-parser';
 import {TableCell, TableRow, IconButton, Collapse, Skeleton } from '@mui/material'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import styles from './Row.module.scss';
 
 function Row(props) {
     const { row } = props;
@@ -35,9 +36,9 @@ function Row(props) {
           </TableCell>
         </TableRow>
         <TableRow>
-          <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
+          <TableCell className={styles.expand_cell} colSpan={5}>
             <Collapse in={open} timeout="auto" unmountOnExit>
-                <div style={{paddingTop: 10, paddingBottom: 10, width: '80%'}}>
+                <div className={styles.expand_text}>
                     {row ? HTMLReactParser(row.description || '') : <Skeleton variant="text" />}
                 </div>
             </Collapse>
