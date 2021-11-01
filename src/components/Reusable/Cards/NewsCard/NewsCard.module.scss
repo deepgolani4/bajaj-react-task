@@ -1,0 +1,52 @@
+@import '../../../../styles/variables.scss';
+.news_card {
+    width: 70%;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+    margin: 20px;
+    .left {
+        flex: 8;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+
+        .news_title {
+            color: $background-color;
+            margin-bottom: 20px;
+        }
+        .news_desc {
+            color: $text-color;
+            font-weight: 400;
+        }
+        .news_provider {
+            img {
+            }
+            p {
+                font-weight: 500;
+                font-size: 16px;
+                color: $background-color;
+            }
+        }
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 10px;
+        .img_container {
+            width: 150px;
+            img {
+                width: 100%;
+            }
+        }
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            color: $background-color;
+        }
+    }
+}
