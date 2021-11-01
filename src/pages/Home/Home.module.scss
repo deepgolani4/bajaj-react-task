@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 .home_page {
     width: 100%;
-    min-height: calc(400vh - 70px);
+    min-height: calc(100vh - 70px);
     padding: 10px 8%;
     background-color: $background-color;
 
@@ -44,7 +44,7 @@
     }
     .top_cryptocurrency_section {
         padding: 0 30px;
-        .top_cryptocurrency_heading {
+        .top_cryptocurrency_title {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -67,7 +67,28 @@
             }
         }
         .viewAll {
-            float: right;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    .news_section {
+        .news_section_title {
+            color: $text-color;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            img {
+                width: 35%;
+            }
+            h1 {
+                margin-top: -5%;
+            }
+        }
+        .viewAll {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
         }
     }
 }
