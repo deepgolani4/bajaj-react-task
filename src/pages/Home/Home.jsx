@@ -5,9 +5,11 @@ import {
     GlobalStatsSection,
     Button,
     News,
+    Advertisement,
 } from '../../components';
 import styles from './Home.module.scss';
 import { BsArrowRightCircle } from 'react-icons/bs';
+
 const Home = () => {
     const history = useHistory();
     const handleOnClick = () => history.push('/cryptocurrencies');
@@ -90,6 +92,7 @@ const Home = () => {
                     </Button>
                 </div>
             </div>
+            <Advertisement />
         </div>
     );
 };

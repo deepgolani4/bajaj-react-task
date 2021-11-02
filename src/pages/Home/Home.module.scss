@@ -2,7 +2,6 @@
 .home_page {
     width: 100%;
     min-height: calc(100vh - 70px);
-    padding: 10px 8%;
     background-color: $background-color;
 
     .banner {
@@ -12,6 +11,7 @@
         position: relative;
         color: white;
         z-index: 1;
+        padding: 10px 8%;
         .subheading {
             margin-top: 10px;
             width: 500px;
@@ -43,7 +43,7 @@
         }
     }
     .top_cryptocurrency_section {
-        padding: 0 30px;
+        padding: 10px 10%;
         .top_cryptocurrency_title {
             display: flex;
             align-items: center;
@@ -72,6 +72,7 @@
         }
     }
     .news_section {
+        padding: 0 8%;
         .news_section_title {
             color: $text-color;
             display: flex;
@@ -79,7 +80,7 @@
             align-items: center;
             position: relative;
             img {
-                width: 35%;
+                width: 30%;
             }
             h1 {
                 margin-top: -5%;

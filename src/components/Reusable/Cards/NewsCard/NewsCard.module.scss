@@ -1,6 +1,6 @@
 @import '../../../../styles/variables.scss';
 .news_card {
-    width: 70%;
+    width: 800px;
     background-color: $primary-color;
     display: flex;
     justify-content: space-between;
@@ -13,6 +13,7 @@
         display: flex;
         flex-direction: column;
         margin-right: 20px;
+        justify-content: space-between;
 
         .news_title {
             color: $background-color;
@@ -21,10 +22,25 @@
         .news_desc {
             color: $text-color;
             font-weight: 400;
+            margin-bottom: 20px;
         }
         .news_provider {
-            img {
+            display: flex;
+            align-items: center;
+            .img_wrapper {
+                width: 30px;
+                height: 30px;
+                background-color: grey;
+
+                border-radius: 100px;
+                margin-right: 20px;
+                img {
+                    max-width: 30px;
+                    height: 30px;
+                    border-radius: 10px;
+                }
             }
+
             p {
                 font-weight: 500;
                 font-size: 16px;
@@ -38,9 +54,12 @@
         justify-content: space-between;
         padding-top: 10px;
         .img_container {
-            width: 150px;
+            width: 100px;
             img {
-                width: 100%;
+                width: 100px;
+
+                border-radius: 20px;
+                object-fit: contain;
             }
         }
         p {

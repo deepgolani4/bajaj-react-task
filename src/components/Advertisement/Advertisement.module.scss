@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+.advertisement {
+    padding: 20px 8%;
+    margin-top: 5%;
+    background-color: #feb243;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .features {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .tag {
+            margin: 10px 20px 10px 0;
+            padding: 10px 25px;
+            border-radius: 50px;
+            background-color: rgba(#fffcf9, 0.35);
+            p {
+                color: white;
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
+    }
+    .ad_title {
+        display: flex;
+        align-items: center;
+        color: whitesmoke;
+        h3 {
+            font-size: 40px;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+    }
+
+    h4 {
+        color: $background-color;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    img {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 10%;
+    }
+}
