@@ -24,7 +24,7 @@ const News = ({ simplified }) => {
             )}
             {cryptoNews?.value.map((news, i) => (
                 <a key={i} href={news.url} target='_blank' rel='noreferrer'>
-                    <NewsCard news={news} />
+                    <NewsCard odd={i % 2 !== 0} news={news} />
                 </a>
             ))}
         </div>

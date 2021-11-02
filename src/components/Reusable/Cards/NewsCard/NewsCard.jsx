@@ -2,10 +2,16 @@ import moment from 'moment';
 import React from 'react';
 import styles from './NewsCard.module.scss';
 const demoImg = './assets/newsplaceholder.png';
-const NewsCard = ({ news }) => {
+const NewsCard = ({ news, odd }) => {
     console.log(news?.image);
+    const style = {
+        backgroundColor: '#A68AF6',
+    };
+    const style2 = {
+        backgroundColor: '#8b8cf9',
+    };
     return (
-        <div className={styles.news_card}>
+        <div style={odd === true ? style : style2} className={styles.news_card}>
             <div className={styles.left}>
                 <div>
                     <h3 className={styles.news_title}>{news.name}</h3>

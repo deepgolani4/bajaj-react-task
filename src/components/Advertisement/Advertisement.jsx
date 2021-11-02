@@ -6,8 +6,8 @@ const Advertisement = () => {
     return (
         <div className={styles.advertisement}>
             <div className={styles.ad_title}>
-                <GiFireBomb size='3rem' />
                 <h3>Your place for all crypto stuff!</h3>
+                <GiFireBomb size='3rem' />
             </div>
             <div className={styles.features}>
                 <div className={styles.tag}>

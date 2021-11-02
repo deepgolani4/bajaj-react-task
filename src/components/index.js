@@ -1,4 +1,5 @@
 export { default as Navbar } from './Navbar/Navbar.jsx';
+export { default as Footer } from './Footer/Footer.jsx';
 export { default as News } from './News/News.jsx';
 export { default as Advertisement } from './Advertisement/Advertisement.jsx';
 export { default as GlobalCard } from './Reusable/Cards/GlobalCard/GlobalCard.jsx';

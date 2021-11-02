@@ -92,4 +92,34 @@
             justify-content: center;
         }
     }
+    .feedback_section {
+        padding: 2% 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .feedback_img {
+            width: 25%;
+        }
+        .feedback_content {
+            color: $text-color;
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+            .feedback_title {
+                margin-bottom: 10px;
+                font-size: 50px;
+            }
+            p {
+                width: 85%;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            .action_btns {
+                display: flex;
+                button {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
 }

@@ -15,8 +15,9 @@
             padding: 10px 25px;
             border-radius: 50px;
             background-color: rgba(#fffcf9, 0.35);
+            border: 2px solid $background-color;
             p {
-                color: white;
+                color: $background-color;
                 font-size: 22px;
                 font-weight: 500;
             }
@@ -25,19 +26,19 @@
     .ad_title {
         display: flex;
         align-items: center;
-        color: whitesmoke;
+        color: $background-color;
         h3 {
-            font-size: 40px;
+            font-size: 38px;
             font-weight: 500;
-            margin-left: 10px;
+            margin-right: 15px;
         }
     }
 
     h4 {
         color: $background-color;
-        text-transform: uppercase;
-        font-size: 30px;
-        font-weight: 600;
+        // text-transform: uppercase;
+        font-size: 38px;
+        font-weight: 500;
     }
     img {
         height: 100%;

@@ -4,6 +4,7 @@ import {
     CryptoCurrencies,
     GlobalStatsSection,
     Button,
+    PrimaryButton,
     News,
     Advertisement,
 } from '../../components';
@@ -93,6 +94,37 @@ const Home = () => {
                 </div>
             </div>
             <Advertisement />
+            <div className={styles.feedback_section}>
+                <img
+                    className={styles.feedback_img}
+                    src='/assets/gift.png'
+                    alt='3d-img'
+                />
+                <div className={styles.feedback_content}>
+                    <h1 className={`section_heading ${styles.feedback_title}`}>
+                        Give us your Feedback
+                    </h1>
+                    <p>
+                        We are trying to improve your experience regularly.
+                        That’s what matters the most to us. Please fill this
+                        form and provide us your feed back.
+                    </p>
+                    <div className={styles.action_btns}>
+                        <PrimaryButton text='Loved It!' onClick={handleOnClick}>
+                            <BsArrowRightCircle
+                                style={{ marginLeft: '10px' }}
+                                size='2rem'
+                            />
+                        </PrimaryButton>
+                        <Button text='Suggestions' onClick={handleOnClick}>
+                            <BsArrowRightCircle
+                                style={{ marginLeft: '10px' }}
+                                size='2rem'
+                            />
+                        </Button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
