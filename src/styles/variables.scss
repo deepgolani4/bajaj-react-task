@@ -8,8 +8,11 @@ $background-color-darker: #3a3c63;
 $grey: #555573;
 $text-color: #fff;
 
+$green-color: #25b196;
+$red-color: #e53e3e;
+
 @mixin gradient($color1, $color2) {
-    background: -webkit-linear-gradient($color1, $color2);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient($color1, $color2);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
