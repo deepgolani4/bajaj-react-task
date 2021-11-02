@@ -1,28 +1,48 @@
+import moment from 'moment';
 import React from 'react';
 import styles from './NewsCard.module.scss';
-const NewsCard = () => {
+const demoImg = './assets/newsplaceholder.png';
+const NewsCard = ({ news, odd }) => {
+    console.log(news?.image);
+    const style = {
+        backgroundColor: '#A68AF6',
+    };
+    const style2 = {
+        backgroundColor: '#8b8cf9',
+    };
     return (
-        <div className={styles.news_card}>
+        <div style={odd === true ? style : style2} className={styles.news_card}>
             <div className={styles.left}>
-                <h3 className={styles.news_title}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pellentesque porta ...
-                </h3>
-                <p className={styles.news_desc}>
-                    Quisque placerat ornare faucibus. Curabitur tincidunt erat
-                    nunc, in rutrum ante gravida vitae. Nunc eget dolor
-                    imperdiet......
-                </p>
+                <div>
+                    <h3 className={styles.news_title}>{news.name}</h3>
+                    <p className={styles.news_desc}>
+                        {news.description.length > 100
+                            ? `${news.description.substring(0, 100)}...`
+                            : news.description}
+                    </p>
+                </div>
+
                 <div className={styles.news_provider}>
-                    <img src='' alt='' />
-                    <p>Yahoo News.</p>
+                    <div className={styles.img_wrapper}>
+                        <img
+                            src={
+                                news.provider[0]?.image?.thumbnail
+                                    ?.contentUrl || demoImg
+                            }
+                            alt=''
+                        />
+                    </div>
+                    <p>{news.provider[0]?.name}</p>
                 </div>
             </div>
             <div className={styles.right}>
                 <div className={styles.img_container}>
-                    <img src='/assets/newsplaceholder.png' alt='' />
+                    <img
+                        src={news?.image?.thumbnail?.contentUrl || demoImg}
+                        alt=''
+                    />
                 </div>
-                <p>41 minutes ago.</p>
+                <p>{moment(news.datePublished).startOf('ss').fromNow()}</p>
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import './App.scss';
-import { Navbar } from './components/index';
+import { Navbar, Footer } from './components/index';
 import {
     Home,
     News,
@@ -34,6 +34,7 @@ function App() {
                     </Switch>
                 </div>
             </div>
+            {/* <Footer /> */}
         </div>
     );
 }

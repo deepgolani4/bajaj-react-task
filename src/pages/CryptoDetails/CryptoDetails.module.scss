@@ -1,116 +1,119 @@
 @import '../../styles/variables.scss';
 
 .crypto_details {
-  overflow: hidden;
-  width: 100%;
-  min-height: calc(100vh - 70px);
-  padding: 90px 8%;
-  background-color: $background-color;
-  .crypto_main {
-    display: flex;
-    margin-bottom: 2rem;
-    .crypto_main_left {
-      flex: 1;
-      .crypto_header {
+    overflow: hidden;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    padding: 90px 8%;
+    background-color: $background-color;
+    .crypto_main {
         display: flex;
-        align-items: center;
-        margin-bottom: 1rem;
-        .crypto_logo {
-          height: 80px;
-          width: 80px;
+        margin-bottom: 2rem;
+        .crypto_main_left {
+            flex: 1;
+            .crypto_header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                .crypto_logo {
+                    height: 80px;
+                    width: 80px;
+                }
+                .crypto_name {
+                    font-weight: 600;
+                    font-size: 3rem;
+                    line-height: 2.5rem;
+                    margin-left: 2rem;
+                    text-shadow: 0px 0px 2px #ffffff;
+                    display: flex;
+                    align-items: flex-end;
+                    .crypto_symbols,
+                    .slash {
+                        font-size: 1rem;
+                        line-height: normal;
+                        color: $text-color;
+                        opacity: 0.7;
+                    }
+                    .slash {
+                        margin: 0 0.5rem;
+                    }
+                }
+            }
+            .crypto_price_info {
+                display: flex;
+                align-items: center;
+                .crypto_price {
+                    margin-left: 112px;
+                    font-weight: 600;
+                    font-size: 2.5rem;
+                    color: $text-color;
+                    opacity: 0.9;
+                }
+                .crypto_price_change {
+                    width: 6rem;
+                    height: 2rem;
+                    background: $background-color-darker;
+                    border-radius: 50px;
+                    margin-left: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $green-color;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    svg {
+                        margin-right: 0.5rem;
+                        height: 1.5rem;
+                    }
+                }
+            }
         }
-        .crypto_name {
-          font-weight: 600;
-          font-size: 3rem;
-          line-height: 2.5rem;
-          margin-left: 2rem;
-          text-shadow: 0px 0px 2px #ffffff;
-          display: flex;
-          align-items: flex-end;
-          .crypto_symbols,
-          .slash {
-            font-size: 1rem;
-            line-height: normal;
-            color: $text-color;
-            opacity: 0.7;
-          }
-          .slash {
-            margin: 0 0.5rem;
-          }
+
+        .crypto_main_right {
+            flex: 1;
+            display: flex;
+            justify-content: end;
+            img {
+                height: 300px;
+            }
         }
-      }
-      .crypto_price_info {
-        display: flex;
-        align-items: center;
-        .crypto_price {
-          margin-left: 112px;
-          font-weight: 600;
-          font-size: 2.5rem;
-          color: $text-color;
-          opacity: 0.9;
-        }
-        .crypto_price_change {
-          width: 6rem;
-          height: 2rem;
-          background: $background-color-darker;
-          border-radius: 50px;
-          margin-left: 2rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: $green-color;
-          font-size: 1rem;
-          font-weight: 600;
-          svg {
-            margin-right: 0.5rem;
-            height: 1.5rem;
-          }
-        }
-      }
     }
 
-    .crypto_main_right {
-      flex: 1;
-      display: flex;
-      justify-content: end;
-      img {
-        height: 300px;
-      }
+    .what_is {
+        margin-bottom: 2rem;
+        .what_is_card {
+            position: relative;
+            background-color: $primary-color;
+            padding: 2rem 3rem;
+            h4 {
+                font-weight: 600;
+                font-size: 2rem;
+                color: $background-color;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-weight: 600;
+                margin-top: 1rem;
+                font-size: 1.7rem;
+                color: $background-color;
+                opacity: 0.9;
+                margin-bottom: 10px;
+            }
+            p {
+                text-align: justify;
+                font-weight: 400;
+                font-size: 18px;
+                color: $text-color;
+            }
+            a {
+                color: $text-color;
+                text-decoration: underline;
+            }
+            .bulb {
+                position: absolute;
+                bottom: 100px;
+                right: -150px;
+            }
+        }
     }
-  }
-
-  .what_is {
-    margin-bottom: 2rem;
-    .what_is_card {
-      position: relative;
-      background-color: $primary-color;
-      padding: 2rem 3rem;
-      h4 {
-        font-weight: bold;
-        font-size: 2rem;
-        color: $background-color;
-      }
-      h3 {
-        margin-top: 1rem;
-        font-size: 1.5rem;
-        color: $background-color;
-        opacity: 0.8;
-      }
-      p {
-        text-align: justify;
-        font-weight: 500;
-        font-size: 1rem;
-        color: $text-color;
-      }
-      a {
-        color: $text-color;
-        text-decoration: underline;
-      }
-      .bulb {
-        position: absolute;
-        bottom: 100px;
-        right: -150px;
-      }
-    }
-  }
 }

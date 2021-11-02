@@ -1,0 +1,56 @@
+@import '../../styles/variables.scss';
+.all_crypto_page {
+    width: 100%;
+    min-height: calc(400vh - 70px);
+    padding: 10px 8%;
+    background-color: $background-color;
+    position: relative;
+    .banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        color: white;
+        z-index: 1;
+
+        .subheading {
+            margin-top: 10px;
+            width: 500px;
+            font-size: 22px;
+        }
+        .top_crypto_img {
+            width: 40%;
+            margin-left: 50px;
+        }
+    }
+    .radio {
+        width: 10%;
+        position: absolute;
+        top: 15%;
+        left: 5%;
+    }
+    .vase2 {
+        width: 10%;
+        position: absolute;
+        right: 0;
+        top: 20%;
+    }
+    .cube {
+        width: 10%;
+        position: absolute;
+        left: 5%;
+        top: 30%;
+    }
+    .book {
+        width: 10%;
+        position: absolute;
+        right: 5%;
+        top: 40%;
+    }
+    .clock {
+        width: 10%;
+        position: absolute;
+        left: 0;
+        bottom: 50%;
+    }
+}
