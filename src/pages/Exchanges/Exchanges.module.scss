@@ -4,12 +4,14 @@
     width: 100%;
     min-height: 100vh;
     padding: 10px 8%;
+    padding-bottom: 40px;
     background-color: $background-color;
     .exchange_table {
-        background-color: white;
+        background-color: $background-color-darker;
         box-shadow: rgba(0,0,0,0.3) 5px 5px 2px;
         padding: 0 10px 0 10px;
         .table_cell {
+            color: white;
             font-weight: 800;
         }
     }
@@ -25,6 +27,7 @@
             margin-top: 10px;
             width: 500px;
             font-size: 22px;
+            color: white;
         }
         .top_crypto_img {
             width: 40%;

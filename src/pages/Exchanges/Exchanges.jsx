@@ -66,7 +66,6 @@ const Exchanges = () => {
                                     >
                                         Change percentage
                                     </TableCell>
-                                    <TableCell />
                                 </TableRow>
                             </TableHead>
                             <TableBody>
@@ -75,7 +74,7 @@ const Exchanges = () => {
                                         <Row key={exchange.uuid} row={exchange} />
                                     ))
                                 ) : (
-                                    <>
+                                    <>                                    
                                         <Row key={1} row={null} />
                                         <Row key={2} row={null} />
                                         <Row key={3} row={null} />
