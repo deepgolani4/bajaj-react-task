@@ -6,8 +6,7 @@
 
 }
 .photoCell {
-    width: 40%;
-    margin-right: -40px;
+    width: 30%;
     border-color: black;
     font-weight: bolder;
     float: right;
@@ -21,9 +20,8 @@
     background-color: black;
     border-color: black;
     border: none;
-    &:hover {
-        color: $golden-color;
-    }
+    
+
 }
 .font {
     padding-left: 60px;
@@ -35,8 +33,10 @@
 
 .first {
     border-color: black;
-    font-size: 14px;
-    padding-top: 5px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.4s ease;
     &:hover {
         color: $golden-color;
     }
@@ -47,5 +47,12 @@
 }
 .logoText {
     color: $golden-color;
+
     
+    
+}
+.mainBox {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
 }
