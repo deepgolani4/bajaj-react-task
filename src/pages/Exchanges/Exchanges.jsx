@@ -72,7 +72,7 @@ const Exchanges = () => {
                             <TableBody>
                                 {exchangesList ? (
                                     exchangesList.map((exchange) => (
-                                        <Row key={exchange.id} row={exchange} />
+                                        <Row key={exchange.uuid} row={exchange} />
                                     ))
                                 ) : (
                                     <>

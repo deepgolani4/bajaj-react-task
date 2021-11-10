@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './NewsCard.module.scss';
 const demoImg = './assets/newsplaceholder.png';
 const NewsCard = ({ news, odd }) => {
-    console.log(news?.image);
     const style = {
         backgroundColor: '#A68AF6',
     };

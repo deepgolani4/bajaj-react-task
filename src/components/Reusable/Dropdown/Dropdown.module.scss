@@ -1,0 +1,49 @@
+@import '../../../styles/variables.scss';
+.dropdown {
+    cursor: pointer;
+    .default_value {
+        color: white;
+        position: relative;
+        background-color: #3A3C63;
+        padding: 10px;
+        border-radius: 10px;
+        width: 15em;
+    }
+    .list {
+        background-color: #3A3C63;
+        margin-top: 5px;
+        width: 15em;
+        height: 20em;
+        overflow-y: scroll;
+        border-radius: 10px;
+        position: absolute;
+        z-index: 1000;
+        .list_item {
+            color: white;
+            padding: 5px 10px 5px 10px;
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        border-radius: 30px;
+        background: #f1f1f1; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        border-radius: 30px;
+        background: #888; 
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+}

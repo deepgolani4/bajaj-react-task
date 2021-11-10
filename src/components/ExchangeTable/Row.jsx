@@ -15,7 +15,7 @@ function Row(props) {
           {row ? 
           <>
             <TableCell align="center">{row.name}</TableCell>
-            <TableCell align="center">${millify(row.volume)}</TableCell>
+            <TableCell align="center">${millify(row["24hVolume"])}</TableCell>
             <TableCell align="center">{millify(row.numberOfMarkets)}</TableCell>
             <TableCell align="center">{millify(row.marketShare)}%</TableCell>
           </>:
