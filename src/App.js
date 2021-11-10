@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from '@mui/material/Link';
 import { Switch, Route } from 'react-router-dom';
 import './App.scss';
 import { Navbar, Footer } from './components/index';
