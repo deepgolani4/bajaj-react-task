@@ -8,7 +8,7 @@ import millify from 'millify';
 const GlobalStatsSection = () => {
     const { data, isFetching } = useGetCryptosQuery(9);
     const globalStats = data?.data?.stats;
-
+    if (!globalStats) return 'No data...';
     if (isFetching) return 'Loading...';
     return (
         <div className={styles.globalSection}>
