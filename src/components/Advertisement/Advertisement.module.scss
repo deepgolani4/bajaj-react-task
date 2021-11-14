@@ -1,49 +1,57 @@
 @import '../../styles/variables.scss';
 .advertisement {
-    padding: 20px 8%;
-    margin-top: 5%;
+    padding: 50px 8%;
+    margin-top: 2%;
     background-color: #feb243;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
-    .features {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        .tag {
-            margin: 10px 20px 10px 0;
-            padding: 10px 25px;
-            border-radius: 50px;
-            background-color: rgba(#fffcf9, 0.35);
-            border: 2px solid $background-color;
-            p {
-                color: $background-color;
-                font-size: 22px;
-                font-weight: 500;
+    .left {
+        width: 60%;
+        .ad_title {
+            display: flex;
+            align-items: center;
+            color: $background-color;
+            margin-bottom: 20px;
+            h3 {
+                font-size: 68px;
+                font-weight: 600;
+                line-height: 100px;
             }
         }
-    }
-    .ad_title {
-        display: flex;
-        align-items: center;
-        color: $background-color;
-        h3 {
-            font-size: 38px;
-            font-weight: 500;
-            margin-right: 15px;
+
+        .features {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+            .tag {
+                margin: 10px 20px 10px 0;
+                padding: 15px 35px;
+                border-radius: 50px;
+                background-color: rgba(#fffcf9, 0.35);
+                border: 4px solid $background-color;
+                p {
+                    color: $background-color;
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+            }
+        }
+        h4 {
+            font-size: 68px;
+            font-weight: 600;
+            line-height: 100px;
+            background: linear-gradient(to right, red, $primary-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
-
-    h4 {
-        color: $background-color;
-        // text-transform: uppercase;
-        font-size: 38px;
-        font-weight: 500;
-    }
-    img {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 10%;
+    .right {
+        width: 40%;
+        img {
+            width: 100%;
+        }
     }
 }

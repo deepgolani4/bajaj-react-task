@@ -3,7 +3,6 @@
     width: 100%;
     background-color: black;
     color: white;
-
 }
 .photoCell {
     width: 30%;
@@ -11,24 +10,19 @@
     font-weight: bolder;
     float: right;
 }
-   
-.cell {
 
-    color:white;
-    font-weight: bold;
+.cell {
+    color: white;
+    font-weight: 500;
     font-size: 20px;
     background-color: black;
     border-color: black;
     border: none;
-    
-
 }
 .font {
     padding-left: 60px;
     color: $golden-color;
-   font-weight: bold;
-   padding-bottom: 10px;
-    
+    padding-bottom: 10px;
 }
 
 .first {
@@ -47,12 +41,8 @@
 }
 .logoText {
     color: $golden-color;
-
-    
-    
 }
 .mainBox {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
     background-color: black;
 }
