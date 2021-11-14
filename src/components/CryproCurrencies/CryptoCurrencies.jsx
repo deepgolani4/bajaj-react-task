@@ -5,7 +5,7 @@ import { useGetCryptosQuery } from '../../services/cryptoApi';
 import { Link } from 'react-router-dom';
 import { FiSearch } from 'react-icons/fi';
 const CryptoCurrencies = ({ simplified }) => {
-    const count = simplified ? 9 : 100;
+    const count = simplified ? 9 : 50;
     const { data: cryptosList, isFetching } = useGetCryptosQuery(count);
     console.log(cryptosList);
     const currencyInitialState = cryptosList?.data?.coins;
