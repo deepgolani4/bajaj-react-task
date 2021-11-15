@@ -2,6 +2,7 @@ import React from 'react'
 import GlobalCard from '../../components/Reusable/Cards/GlobalCard/GlobalCard'
 import CryptoStats from '../../components/CryptoStats/CryptoStats'
 import CryptoSuggestions from '../../components/CryptoSuggestions/CryptoSuggestions'
+import LoadingCube from '../../components/LoadingCube/LoadingCube'
 // Styles
 import styles from './CryptoDetails.module.scss'
 import { BsTriangleFill } from 'react-icons/bs'
@@ -14,7 +15,7 @@ const CryptoDetails = () => {
   const { data, isFetching } = useGetCryptoDetailsQuery(coinId)
   const cryptoDetails = data?.data?.coin
 
-  if (isFetching) return 'Loading...'
+  if (isFetching) return <LoadingCube />
 
   return (
     <div className={styles.crypto_details}>
@@ -26,10 +27,7 @@ const CryptoDetails = () => {
               src={cryptoDetails?.iconUrl}
               alt={cryptoDetails?.name}
             />
-            <h2
-              style={{ color: cryptoDetails?.color }}
-              className={styles.crypto_name}
-            >
+            <h2 className={styles.crypto_name}>
               {cryptoDetails?.name}
               <span className={styles.slash}>/</span>
               <span className={styles.crypto_symbols}>
