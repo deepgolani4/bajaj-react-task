@@ -7,3 +7,15 @@
         color: white;
     }
 }
+
+.expand_cell {
+    border-bottom: none; 
+    padding: 8px;
+    .expand_text {
+        color:white;
+    }
+}
+
+a {
+    color: $primary-color;
+}
