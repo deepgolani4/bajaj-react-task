@@ -22,7 +22,7 @@ const Home = () => {
                     <h1 className='section_heading'>Global Crypto</h1>
                     <h1 className='section_heading'>Statistics.</h1>
                     <p className={styles.subheading}>
-                        Get all the information about cryptos here.
+                        Get all the information about crypto here.
                     </p>
                 </div>
                 <img

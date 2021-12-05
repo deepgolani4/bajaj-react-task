@@ -3,63 +3,66 @@
 .crypto_details_col1,
 .crypto_details_col3,
 .crypto_details_col4 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-    .crypto_details_card {
-        width: 25%;
-        padding: 1.5rem;
-        .crypto_details_header {
-            display: flex;
-            align-items: center;
-            img,
-            svg {
-                height: 2.5rem;
-                width: 2.5rem;
-                margin-right: 1rem;
-            }
-            h5 {
-                font-weight: 600;
-                font-size: 22px;
-                color: $primary-color;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-        }
-        .pricetag_wrapper {
-            margin-top: 1rem;
-        }
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  .crypto_details_card {
+    width: 25%;
+    padding: 1.5rem;
+    .crypto_details_header {
+      display: flex;
+      align-items: center;
+      img,
+      svg {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-right: 1rem;
+      }
+      h5 {
+        font-weight: 600;
+        font-size: 22px;
+        color: $primary-color;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
+    .pricetag_wrapper {
+      margin-top: 1rem;
+    }
+  }
+  svg {
+    color: $primary-color;
+  }
 }
 
 .crypto_details_col2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  .price_chart_wrapper {
+    width: 65%;
+    padding: 1.5rem;
+  }
+  .coin_info_card {
+    width: 30%;
+    background-color: $primary-color;
+    padding: 1.5rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 2rem;
-    .price_chart_wrapper {
-        width: 65%;
-        padding: 1.5rem;
+    div {
+      h6 {
+        font-weight: 600;
+        font-size: 22px;
+        color: $background-color;
+      }
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        color: $text-color;
+      }
     }
-    .coin_info_card {
-        width: 30%;
-        background-color: $primary-color;
-        padding: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        div {
-            h6 {
-                font-weight: 600;
-                font-size: 22px;
-                color: $background-color;
-            }
-            a {
-                text-decoration: none;
-                font-weight: 500;
-                font-size: 1rem;
-                color: $text-color;
-            }
-        }
-    }
+  }
 }

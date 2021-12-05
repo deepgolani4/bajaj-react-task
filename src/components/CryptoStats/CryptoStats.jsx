@@ -15,6 +15,7 @@ import { IoIosStats } from 'react-icons/io'
 import { GiTakeMyMoney } from 'react-icons/gi'
 import { BsPatchCheckFill } from 'react-icons/bs'
 import { AiFillDollarCircle } from 'react-icons/ai'
+import { GiCubeforce } from 'react-icons/gi'
 
 import styles from './CryptoStats.module.scss'
 
@@ -55,17 +56,17 @@ const CryptoStats = ({ cryptoDetails, coinId }) => {
         {
           title: 'Market Cap',
           value: cryptoDetails.marketCap && millify(cryptoDetails.marketCap),
-          icon: <RiMoneyDollarCircleFill style={{ color: '#F6A48A' }} />
+          icon: <RiMoneyDollarCircleFill />
         },
         {
           title: '24h Volume',
           value: cryptoDetails.volume && millify(cryptoDetails.volume),
-          icon: <HiLightningBolt style={{ color: '#E53E3E' }} />
+          icon: <GiCubeforce />
         },
         {
           title: 'Rank',
           value: cryptoDetails.rank,
-          icon: <IoIosStats style={{ color: '#25B196' }} />
+          icon: <IoIosStats />
         }
       ])
 
@@ -116,17 +117,17 @@ const CryptoStats = ({ cryptoDetails, coinId }) => {
           value:
             cryptoDetails?.allTimeHigh?.price &&
             millify(cryptoDetails?.allTimeHigh?.price),
-          icon: <RiTrophyFill style={{ color: '#E53E3E' }} />
+          icon: <RiTrophyFill />
         },
         {
           title: '# of Markets',
           value: cryptoDetails?.numberOfMarkets,
-          icon: <RiCopperCoinFill style={{ color: '#25B196' }} />
+          icon: <RiCopperCoinFill />
         },
         {
           title: '# of Exchanges',
           value: cryptoDetails?.numberOfExchanges,
-          icon: <RiCoinsFill style={{ color: '#F6A48A' }} />
+          icon: <RiCoinsFill />
         }
       ])
 
@@ -135,19 +136,19 @@ const CryptoStats = ({ cryptoDetails, coinId }) => {
           title: 'Total Supply',
           value:
             cryptoDetails?.totalSupply && millify(cryptoDetails?.totalSupply),
-          icon: <AiFillDollarCircle style={{ color: '#25B196' }} />
+          icon: <AiFillDollarCircle />
         },
         {
           title: 'Circulating Supply',
           value:
             cryptoDetails?.circulatingSupply &&
             millify(cryptoDetails?.circulatingSupply),
-          icon: <GiTakeMyMoney style={{ color: '#F6A48A' }} />
+          icon: <GiTakeMyMoney />
         },
         {
           title: 'Approved Supply',
           value: cryptoDetails?.approvedSupply,
-          icon: <BsPatchCheckFill style={{ color: '#E53E3E' }} />
+          icon: <BsPatchCheckFill />
         }
       ])
     }
