@@ -66,15 +66,16 @@ const Exchanges = () => {
                                     >
                                         Change percentage
                                     </TableCell>
+                                    <TableCell />
                                 </TableRow>
                             </TableHead>
                             <TableBody>
                                 {exchangesList ? (
                                     exchangesList.map((exchange) => (
-                                        <Row key={exchange.uuid} row={exchange} />
+                                        <Row key={exchange.id} row={exchange} />
                                     ))
                                 ) : (
-                                    <>                                    
+                                    <>
                                         <Row key={1} row={null} />
                                         <Row key={2} row={null} />
                                         <Row key={3} row={null} />
